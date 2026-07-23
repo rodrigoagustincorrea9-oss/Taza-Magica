@@ -5,135 +5,336 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Taza Mágica</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f7f7f7;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
-header{
-    background:#6d4c41;
-    color:white;
-    padding:20px;
-    text-align:center;
+body{
+background:#f4f9ff;
+color:#333;
 }
 
 nav{
-    background:#8d6e63;
-    text-align:center;
-    padding:10px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0d6efd;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:18px;
+z-index:999;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+font-weight:600;
 }
 
-.hero{
-    padding:80px 20px;
-    text-align:center;
-    background:#f3e5d8;
+header{
+height:100vh;
+background:
+linear-gradient(rgba(13,110,253,.45),rgba(13,110,253,.45)),
+url("Portada.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
 }
 
-.hero h1{
-    font-size:42px;
-    color:#6d4c41;
+.logo{
+width:180px;
+background:white;
+padding:10px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.30);
+margin-bottom:25px;
 }
 
-.hero p{
-    font-size:20px;
+header h1{
+font-size:60px;
+}
+
+header p{
+font-size:22px;
+margin-top:15px;
+max-width:700px;
 }
 
 .boton{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
+margin-top:35px;
+background:#25D366;
+color:white;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.boton:hover{
+transform:scale(1.05);
 }
 
 section{
-    padding:50px 20px;
-    text-align:center;
+padding:90px 10%;
 }
 
-footer{
-    background:#6d4c41;
-    color:white;
-    padding:20px;
-    text-align:center;
+.titulo{
+text-align:center;
+font-size:40px;
+color:#0d6efd;
+margin-bottom:40px;
 }
+
+.tarjetas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.tarjeta{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+text-align:center;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<header>
-
-    <img src="Portada.jpg"
-         alt="Portada Taza Mágica"
-         style="width:100%; max-height:450px; object-fit:cover; display:block;">
-
-    <img src="Screenshot_20260723_033154_ChatGPT.jpg"
-         alt="Logo Taza Mágica"
-         style="width:170px; margin-top:-70px; border-radius:20px; background:white; padding:8px; box-shadow:0 5px 15px rgba(0,0,0,0.3);">
-
-    <h1>Taza Mágica</h1>
-    <p>Compartiendo esperanza y solidaridad</p>
-
-</header>
-    <img src="Portada.jpg" alt="Portada Taza Mágica" style="width:100%; max-height:600px; object-fit:cover; display:block;">
-    <img src="Screenshot_20260723_033154_ChatGPT.jpg" alt="Logo Taza Mágica" style="width:180px;border-radius:20px;box-shadow:0 8px 20px rgba(0,0,0,0.3);">
-
-<h1>Taza Mágica</h1>
-<p>Compartiendo esperanza y solidaridad</p>
-<h2>Taza Mágica</h2>
-<p>Compartiendo esperanza y solidaridad</p>
-</header>
-
 <nav>
-<a href="#">Inicio</a>
-<a href="#">Nuestra misión</a>
-<a href="#">Cómo ayudar</a>
-<a href="#">Contacto</a>
+
+<a href="#inicio">Inicio</a>
+
+<a href="#quienes">Quiénes Somos</a>
+
+<a href="#mision">Misión</a>
+
+<a href="#ayudar">Ayudar</a>
+
+<a href="#contacto">Contacto</a>
+
 </nav>
 
-<div class="hero">
-<h1>Bienvenidos</h1>
+<header id="inicio">
+
+<img class="logo" src="Screenshot_20260723_033154_ChatGPT.jpg">
+
+<h1>Taza Mágica</h1>
 
 <p>
-En <strong>Taza Mágica</strong> trabajamos para brindar contención, esperanza y acompañamiento a niños, jóvenes y familias que deseen acercarse. Creemos que cada pequeño gesto puede transformar una vida y fortalecer nuestra comunidad.
+Compartiendo esperanza y solidaridad para todas las personas que deseen acercarse.
 </p>
 
 <a class="boton" href="https://wa.me/543513533215">
-    Contáctanos por WhatsApp
+WhatsApp
 </a>
-Contactanos por WhatsApp
+
+</header>
+<section id="quienes">
+
+<h2 class="titulo">¿Quiénes Somos?</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+<h3>❤️ Nuestra Historia</h3>
+
+<p>
+Taza Mágica nació con el deseo de brindar un espacio de amor, contención y esperanza para niños, jóvenes y familias que deseen acercarse. Creemos que unidos podemos transformar vidas.
+</p>
+
+</div>
+
+<div class="tarjeta">
+<h3>🤝 Nuestro Compromiso</h3>
+
+<p>
+Trabajamos con dedicación para compartir una merienda, acompañar a quienes más lo necesitan y construir una comunidad donde todos se sientan bienvenidos.
+</p>
+
+</div>
+
+<div class="tarjeta">
+<h3>🌎 Nuestra Visión</h3>
+
+<p>
+Soñamos con una comunidad solidaria, donde cada persona tenga oportunidades para crecer, aprender y recibir el apoyo que necesita.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="mision">
+
+<h2 class="titulo">Nuestra Misión</h2>
+
+<div class="tarjeta">
+
+<p style="font-size:18px;line-height:1.8">
+
+En <strong>Taza Mágica</strong> creemos que un pequeño gesto puede cambiar una vida. Nuestra misión es acompañar a niños, jóvenes y familias mediante la Copa de Leche, actividades solidarias y el compromiso de personas que desean ayudar a construir una comunidad más unida.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 class="titulo">☕ Copa de Leche</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+<h3>🥛 Merienda</h3>
+<p>Compartimos una merienda con cariño para quienes nos visitan.</p>
+</div>
+
+<div class="tarjeta">
+<h3>🎨 Actividades</h3>
+<p>Juegos, aprendizaje y momentos para compartir en familia.</p>
+</div>
+
+<div class="tarjeta">
+<h3>❤️ Acompañamiento</h3>
+<p>Escuchamos y acompañamos a cada persona con respeto y solidaridad.</p>
+</div>
+
+</div>
+
+</section>
+<section id="ayudar">
+
+<h2 class="titulo">¿Cómo puedes ayudar?</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+<h3>🥛 Donar leche</h3>
+<p>La leche es uno de los aportes más importantes para nuestra Copa de Leche.</p>
+</div>
+
+<div class="tarjeta">
+<h3>🍞 Alimentos</h3>
+<p>Recibimos alimentos no perecederos para las familias que nos acompañan.</p>
+</div>
+
+<div class="tarjeta">
+<h3>👕 Ropa y calzado</h3>
+<p>En buen estado para niños, jóvenes y adultos.</p>
+</div>
+
+<div class="tarjeta">
+<h3>📚 Útiles escolares</h3>
+<p>Ayudemos a que más chicos puedan estudiar.</p>
+</div>
+
+<div class="tarjeta">
+<h3>🧸 Juguetes</h3>
+<p>Un juguete también puede regalar una sonrisa.</p>
+</div>
+
+<div class="tarjeta">
+<h3>🙋 Ser voluntario</h3>
+<p>Siempre necesitamos personas con ganas de ayudar.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2 class="titulo">Contacto</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+
+<h3>📱 WhatsApp</h3>
+
+<p>
+3513533215
+</p>
+
+<a class="boton" href="https://wa.me/543513533215">
+Escribinos
 </a>
 
 </div>
 
-<section>
+<div class="tarjeta">
 
-<h2>Nuestra Misión</h2>
+<h3>📍 Ubicación</h3>
 
 <p>
-Brindar apoyo, contención y esperanza a todas las personas y familias que deseen acercarse.
+Barrio El Cerrito<br>
+Córdoba, Argentina
 </p>
+
+</div>
+
+<div class="tarjeta">
+
+<h3>❤️ Gracias</h3>
+
+<p>
+
+Gracias por acompañar a Taza Mágica.
+
+Cada ayuda, por pequeña que sea,
+puede cambiar una vida.
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
-<footer>
+<footer style="background:#0d6efd;color:white;text-align:center;padding:35px;">
 
-© 2026 Taza Mágica
+<h2>Taza Mágica</h2>
+
+<p>
+Compartiendo esperanza y solidaridad.
+</p>
+
+<p style="margin-top:20px;">
+© 2026 Taza Mágica - Todos los derechos reservados.
+</p>
 
 </footer>
 
 </body>
+
 </html>

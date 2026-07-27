@@ -1,414 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taza Mágica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taza Mágica | Una Luz de Esperanza</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f4f9ff;
-color:#333;
-}
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#0d6efd;
-display:flex;
-justify-content:center;
-gap:30px;
-padding:18px;
-z-index:999;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:600;
-}
-
-header{
-height:100vh;
-background:
-linear-gradient(rgba(13,110,253,.45),rgba(13,110,253,.45)),
-url("Portada.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.logo{
-width:180px;
-background:white;
-padding:10px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.30);
-margin-bottom:25px;
-}
-
-header h1{
-font-size:60px;
-}
-
-header p{
-font-size:22px;
-margin-top:15px;
-max-width:700px;
-}
-
-.boton{
-margin-top:35px;
-background:#25D366;
-color:white;
-padding:15px 35px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.boton:hover{
-transform:scale(1.05);
-}
-
-section{
-padding:90px 10%;
-}
-
-.titulo{
-text-align:center;
-font-size:40px;
-color:#0d6efd;
-margin-bottom:40px;
-}
-
-.tarjetas{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.tarjeta{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.10);
-text-align:center;
-}
-
-</style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<nav>
+<header>
+    <div class="logo">
+        <h1>Taza Mágica</h1>
+        <p>Una Luz de Esperanza</p>
+    </div>
 
-<a href="#inicio">Inicio</a>
-
-<a href="#quienes">Quiénes Somos</a>
-
-<a href="#mision">Misión</a>
-
-<a href="#ayudar">Ayudar</a>
-
-<a href="#contacto">Contacto</a>
-
-</nav>
-
-<header id="inicio">
-
-<img class="logo" src="Screenshot_20260723_033154_ChatGPT.jpg">
-
-<h1>Taza Mágica</h1>
-
-<p>
-Compartiendo esperanza y solidaridad para todas las personas que deseen acercarse.
-</p>
-
-<a class="boton" href="https://wa.me/543513533215">
-WhatsApp
-</a>
-
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#donar">Donar</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 </header>
-<section id="quienes">
 
-<h2 class="titulo">¿Quiénes Somos?</h2>
+<section id="inicio" class="hero">
 
-<div class="tarjetas">
+    <div class="hero-text">
 
-<div class="tarjeta">
-<h3>❤️ Nuestra Historia</h3>
-<section id="gracias-paola-ariel">
-  <h2>💙 Gracias, Paola y Ariel</h2>
+        <h2>Llevando esperanza, alimento y amor.</h2>
 
-  <p>
-    Hoy queremos expresar nuestro más profundo agradecimiento a Paola y Ariel,
-    quienes hicieron posible este hermoso lugar donde cada niño encuentra amor,
-    contención, una merienda, una cena y una familia.
-  </p>
+        <p>
+            Hace más de 2 años acompañamos a niños y familias
+            brindando merienda, cena y un espacio donde cada
+            persona es recibida con cariño.
+        </p>
 
-  <p>
-    Gracias por abrirnos las puertas, por acompañarnos en cada proyecto,
-    por ayudarnos a cumplir cada meta y por creer en Taza Mágica desde el primer día.
-    Cada sonrisa, cada cumpleaños celebrado y cada plato servido también son fruto
-    de su generosidad.
-  </p>
+        <a href="#donar" class="boton">
+            Quiero colaborar
+        </a>
 
-  <blockquote>
-    "Y todo lo que hagan, háganlo de corazón, como para el Señor y no para los hombres."
-    <br><strong>Colosenses 3:23</strong>
-  </blockquote>
+    </div>
 
-  <div class="galeria">
-    <img src="img/paola-ariel1.jpg" alt="">
-    <img src="img/paola-ariel2.jpg" alt="">
-    <img src="img/paola-ariel3.jpg" alt="">
-    <img src="img/paola-ariel4.jpg" alt="">
-    <img src="img/paola-ariel5.jpg" alt="">
-    <img src="img/paola-ariel6.jpg" alt="">
-    <img src="img/paola-ariel7.jpg" alt="">
-    <img src="img/paola-ariel8.jpg" alt="">
-    <img src="img/paola-ariel9.jpg" alt="">
-    <img src="img/paola-ariel10.jpg" alt="">
-  </div>
 </section>
-<p>
-Taza Mágica nació con el deseo de brindar un espacio de amor, contención y esperanza para niños, jóvenes y familias que deseen acercarse. Creemos que unidos podemos transformar vidas.
-</p>
 
-</div>
+<section id="nosotros">
 
-<div class="tarjeta">
-<h3>🤝 Nuestro Compromiso</h3>
+<h2>¿Quiénes Somos?</h2>
 
 <p>
-Trabajamos con dedicación para compartir una merienda, acompañar a quienes más lo necesitan y construir una comunidad donde todos se sientan bienvenidos.
+
+Somos el Comedor y Merendero
+<strong>Taza Mágica</strong>,
+un espacio solidario que nació con el deseo de ayudar a quienes más lo necesitan.
+
+Actualmente acompañamos a más de 150 niños y sus familias,
+ofreciendo merienda, cena, contención y esperanza.
+
+Nuestro trabajo es posible gracias al esfuerzo de colaboradores,
+voluntarios y personas solidarias que creen que un pequeño gesto
+puede cambiar una vida.
+
 </p>
 
-</div>
+</section>
 
-<div class="tarjeta">
-<h3>🌎 Nuestra Visión</h3>
+<section class="mision">
+
+<h2>Nuestra Misión</h2>
 
 <p>
-Soñamos con una comunidad solidaria, donde cada persona tenga oportunidades para crecer, aprender y recibir el apoyo que necesita.
-</p>
 
-</div>
+Brindar alimento, amor y esperanza a cada familia que se acerca,
+sin importar de dónde venga.
 
-</div>
-
-</section>
-
-
-<section id="mision">
-
-<h2 class="titulo">Nuestra Misión</h2>
-
-<div class="tarjeta">
-
-<p style="font-size:18px;line-height:1.8">
-
-En <strong>Taza Mágica</strong> creemos que un pequeño gesto puede cambiar una vida. Nuestra misión es acompañar a niños, jóvenes y familias mediante la Copa de Leche, actividades solidarias y el compromiso de personas que desean ayudar a construir una comunidad más unida.
+Queremos construir una comunidad donde nadie se sienta solo
+y donde cada niño tenga un motivo para sonreír.
 
 </p>
 
-</div>
+</section>
+<section id="galeria">
+
+    <h2>Nuestra Galería</h2>
+
+    <p>
+        Cada sonrisa refleja el amor y el esfuerzo de quienes hacen posible este proyecto.
+    </p>
+
+    <div class="galeria">
+
+        <img src="imagenes/foto1.jpg" alt="Actividad 1">
+        <img src="imagenes/foto2.jpg" alt="Actividad 2">
+        <img src="imagenes/foto3.jpg" alt="Actividad 3">
+        <img src="imagenes/foto4.jpg" alt="Actividad 4">
+        <img src="imagenes/foto5.jpg" alt="Actividad 5">
+        <img src="imagenes/foto6.jpg" alt="Actividad 6">
+        <img src="imagenes/foto7.jpg" alt="Actividad 7">
+        <img src="imagenes/foto8.jpg" alt="Actividad 8">
+        <img src="imagenes/foto9.jpg" alt="Actividad 9">
+
+    </div>
 
 </section>
 
+<section id="donar" class="donaciones">
 
-<section>
+    <h2>¿Querés Ayudarnos?</h2>
 
-<h2 class="titulo">☕ Copa de Leche</h2>
+    <p>
+        Con tu colaboración podemos seguir llevando merienda, cena y esperanza a muchas familias.
+    </p>
 
-<div class="tarjetas">
+    <a class="boton" href="#">
+        ❤️ Donar Ahora
+    </a>
 
-<div class="tarjeta">
-<h3>🥛 Merienda</h3>
-<p>Compartimos una merienda con cariño para quienes nos visitan.</p>
-</div>
+    <h3>También podés colaborar con:</h3>
 
-<div class="tarjeta">
-<h3>🎨 Actividades</h3>
-<p>Juegos, aprendizaje y momentos para compartir en familia.</p>
-</div>
-
-<div class="tarjeta">
-<h3>❤️ Acompañamiento</h3>
-<p>Escuchamos y acompañamos a cada persona con respeto y solidaridad.</p>
-</div>
-
-</div>
-
-</section>
-<section id="ayudar">
-
-<h2 class="titulo">¿Cómo puedes ayudar?</h2>
-
-<div class="tarjetas">
-
-<div class="tarjeta">
-<h3>🥛 Donar leche</h3>
-<p>La leche es uno de los aportes más importantes para nuestra Copa de Leche.</p>
-</div>
-
-<div class="tarjeta">
-<h3>🍞 Alimentos</h3>
-<p>Recibimos alimentos no perecederos para las familias que nos acompañan.</p>
-</div>
-
-<div class="tarjeta">
-<h3>👕 Ropa y calzado</h3>
-<p>En buen estado para niños, jóvenes y adultos.</p>
-</div>
-
-<div class="tarjeta">
-<h3>📚 Útiles escolares</h3>
-<p>Ayudemos a que más chicos puedan estudiar.</p>
-</div>
-
-<div class="tarjeta">
-<h3>🧸 Juguetes</h3>
-<p>Un juguete también puede regalar una sonrisa.</p>
-</div>
-
-<div class="tarjeta">
-<h3>🙋 Ser voluntario</h3>
-<p>Siempre necesitamos personas con ganas de ayudar.</p>
-</div>
-
-</div>
+    <ul>
+        <li>🍞 Alimentos no perecederos</li>
+        <li>🧸 Juguetes</li>
+        <li>👕 Ropa</li>
+        <li>📚 Útiles escolares</li>
+    </ul>
 
 </section>
 
 <section id="contacto">
 
-<h2 class="titulo">Contacto</h2>
-
-<div class="tarjetas">
-
-<div class="tarjeta">
-
-<h3>📱 WhatsApp</h3>
+<h2>Contacto</h2>
 
 <p>
-3513533215
+📍 Córdoba - Argentina
 </p>
-
-<a class="boton" href="https://wa.me/543513533215">
-Escribinos
-</a>
-
-</div>
-
-<div class="tarjeta">
-
-<h3>📍 Ubicación</h3>
 
 <p>
-Barrio El Cerrito<br>
-Córdoba, Argentina
+🕒 Lunes, Miércoles y Viernes
+<br>
+17:30 a 21:00 hs
 </p>
-
-</div>
-
-<div class="tarjeta">
-
-<h3>❤️ Gracias</h3>
 
 <p>
-
-Gracias por acompañar a Taza Mágica.
-
-Cada ayuda, por pequeña que sea,
-puede cambiar una vida.
-
+Seguinos en nuestras redes sociales para conocer todas nuestras actividades.
 </p>
 
-</div>
+<div class="redes">
+
+<a href="https://facebook.com/" target="_blank">Facebook</a>
+
+<a href="https://instagram.com/magicataza/" target="_blank">Instagram</a>
 
 </div>
 
 </section>
 
-<footer style="background:#0d6efd;color:white;text-align:center;padding:35px;">
-
-<h2>Taza Mágica</h2>
+<footer>
 
 <p>
-Compartiendo esperanza y solidaridad.
+
+"En todo tiempo ama el amigo,
+y es como un hermano en tiempo de angustia."
+
+<br><br>
+
+<strong>Proverbios 17:17</strong>
+
 </p>
 
-<p style="margin-top:20px;">
-© 2026 Taza Mágica - Todos los derechos reservados.
+<p>
+
+© 2026 Comedor y Merendero Taza Mágica - Una Luz de Esperanza.
+
 </p>
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
-
 </html>
-<section id="donaciones" style="background:#2E7D32;padding:70px 20px;color:white;text-align:center;">
-
-<h2 style="font-size:42px;">❤️ Ayudanos a Cambiar Vidas</h2>
-
-<p style="font-size:22px;max-width:700px;margin:auto;">
-Con tu aporte desde <strong>$1.000</strong> nos ayudás a comprar alimentos,
-ropa, juguetes y brindar apoyo a familias que lo necesitan.
-</p>
-
-<a href="https://pagar.ualabis.com.ar/order/c582ca5eac19f6e173578925122d88d15ee0841508571eba"
-target="_blank"
-style="
-display:inline-block;
-margin-top:35px;
-padding:20px 45px;
-background:#00C853;
-color:white;
-font-size:26px;
-font-weight:bold;
-text-decoration:none;
-border-radius:60px;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-transition:.3s;
-">
-💚 DONAR DESDE $1.000
-</a>
-
-<p style="margin-top:30px;font-size:18px;">
-Pago 100% seguro mediante Ualá.
-</p>
-
-</section>
-
-        </div>
-
-        <div style="margin-top:30px;">
-
-            <h3 style="color:#444;">CBU</h3>
-
-            <input id="cbu" type="text"
-            value="384020050
